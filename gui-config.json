@@ -1,0 +1,36 @@
+{
+    "config": [
+        {
+            "server": "64.137.246.61",
+            "server_port": "2693",
+            "local_port": 1080,
+            "password": "doub.io/sszhfx/*2693",
+            "timeout": 600,
+            "method": "chacha20"
+        },
+        {
+            "server": "64.137.251.141",
+            "server_port": "2693",
+            "local_port": 1080,
+            "password": "doub.io/sszhfx/*2693",
+            "timeout": 600,
+            "method": "chacha20"
+        },
+        {
+            "server": "45.62.249.213",
+            "server_port": "2693",
+            "local_port": 1080,
+            "password": "doub.io/sszhfx/*2693",
+            "timeout": 600,
+            "method": "chacha20"
+        },
+        {
+            "server": "64.137.228.35",
+            "server_port": "2693",
+            "local_port": 1080,
+            "password": "doub.io/sszhfx/*2693",
+            "timeout": 600,
+            "method": "chacha20"
+        }
+    ]
+}
