@@ -1,0 +1,30 @@
+{
+  "name": "ss-config",
+  "version": "1.0.0",
+  "description": "get shadowsocks free server config",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^2.6.1",
+    "cheerio": "^1.0.0-rc.2",
+    "request": "^2.87.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuyuchang/ss-config.git"
+  },
+  "keywords": [
+    "shadowsocks",
+    "free",
+    "config"
+  ],
+  "author": "wuyuchang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wuyuchang/ss-config/issues"
+  },
+  "homepage": "https://github.com/wuyuchang/ss-config#readme"
+}

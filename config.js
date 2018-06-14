@@ -1,3 +1,3 @@
-{
-  ss_folder: ''
+module.exports = {
+  ss_folder: '/home/jackie/www/ss-config/'
 }

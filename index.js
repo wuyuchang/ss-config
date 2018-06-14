@@ -14,7 +14,7 @@ request('https://doub.io/sszhfx/', (error, response, body) => {
   const $ = cheerio.load(body)
   const regex = /ss\:\/\//i
   let gui_config = {
-    config: []
+    configs: []
   }
 
   const funList = $('table .dl1')
@@ -29,7 +29,7 @@ request('https://doub.io/sszhfx/', (error, response, body) => {
   async.parallel(funList, (error, domList) => {
     domList.forEach(dom => {
       const $ = cheerio.load(dom)
-      gui_config.config.push($('a')
+      gui_config.configs.push($('a')
         .toArray()
         .filter(item => regex.test(item.attribs.href))
         .map(item => {
@@ -45,18 +45,18 @@ request('https://doub.io/sszhfx/', (error, response, body) => {
             "server_port": res[5],
             "local_port": 1080,
             "password": res[3],
-            "timeout": 600,
+            "timeout": 5,
             "method": res[1]
           }
         })[0])
     })
 
-    fs.writeFile(config.ss_folder + '/gui-config.json', JSON.stringify(gui_config, null, 4), error => {
+    fs.writeFile(config.ss_folder + 'gui-config.json', JSON.stringify(gui_config, null, 4), error => {
       if (error) {
         console.error(error)
       }
 
-      child_process.exec(config.ss_folder + 'shadowsocks.exe');
+      child_process.exec(config.ss_folder + 'Shadowsocks.exe');
     })
 
   })
