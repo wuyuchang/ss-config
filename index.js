@@ -5,17 +5,15 @@ const fs = require('fs')
 const child_process = require('child_process')
 const config = require('./config.js')
 
-if (!config.ss_folder) {
-  console.error('please set shadowsocks directory on "config.js"');
-  return;
-}
+// if (!config.ss_folder) {
+//   console.error('please set shadowsocks directory on "config.js"');
+//   return;
+// }
 
 request('https://doub.io/sszhfx/', (error, response, body) => {
   const $ = cheerio.load(body)
   const regex = /ss\:\/\//i
-  let gui_config = {
-    configs: []
-  }
+  let gui_config = config.default_ss_config
 
   const funList = $('table .dl1')
     .toArray()
@@ -43,20 +41,23 @@ request('https://doub.io/sszhfx/', (error, response, body) => {
           return {
             "server": res[4],
             "server_port": res[5],
-            "local_port": 1080,
             "password": res[3],
-            "timeout": 5,
-            "method": res[1]
+            "method": res[1],
+            "plugin": "",
+            "plugin_opts": "",
+            "plugin_args": "",
+            "remarks": res[4],
+            "timeout": 5
           }
         })[0])
     })
 
-    fs.writeFile(config.ss_folder + 'gui-config.json', JSON.stringify(gui_config, null, 4), error => {
+    fs.writeFile('gui-config.json', JSON.stringify(gui_config, null, 4), error => {
       if (error) {
         console.error(error)
       }
 
-      child_process.exec(config.ss_folder + 'Shadowsocks.exe');
+      // child_process.exec(config.ss_folder + 'Shadowsocks.exe');
     })
 
   })

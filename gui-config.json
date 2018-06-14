@@ -1,85 +1,85 @@
 {
-  "configs": [
-    {
-      "server": "64.137.246.61",
-      "server_port": 2693,
-      "password": "doub.io/sszhfx/*2693",
-      "method": "chacha20",
-      "plugin": "",
-      "plugin_opts": "",
-      "plugin_args": "",
-      "remarks": "",
-      "timeout": 5
+    "configs": [
+        {
+            "server": "64.137.246.61",
+            "server_port": "2693",
+            "password": "doub.io/sszhfx/*2693",
+            "method": "chacha20",
+            "plugin": "",
+            "plugin_opts": "",
+            "plugin_args": "",
+            "remarks": "64.137.246.61",
+            "timeout": 5
+        },
+        {
+            "server": "64.137.251.141",
+            "server_port": "2693",
+            "password": "doub.io/sszhfx/*2693",
+            "method": "chacha20",
+            "plugin": "",
+            "plugin_opts": "",
+            "plugin_args": "",
+            "remarks": "64.137.251.141",
+            "timeout": 5
+        },
+        {
+            "server": "45.62.249.213",
+            "server_port": "2693",
+            "password": "doub.io/sszhfx/*2693",
+            "method": "chacha20",
+            "plugin": "",
+            "plugin_opts": "",
+            "plugin_args": "",
+            "remarks": "45.62.249.213",
+            "timeout": 5
+        },
+        {
+            "server": "64.137.228.35",
+            "server_port": "2693",
+            "password": "doub.io/sszhfx/*2693",
+            "method": "chacha20",
+            "plugin": "",
+            "plugin_opts": "",
+            "plugin_args": "",
+            "remarks": "64.137.228.35",
+            "timeout": 5
+        }
+    ],
+    "strategy": "com.shadowsocks.strategy.ha",
+    "index": -1,
+    "global": false,
+    "enabled": true,
+    "shareOverLan": false,
+    "isDefault": false,
+    "localPort": 1080,
+    "pacUrl": null,
+    "useOnlinePac": false,
+    "secureLocalPac": true,
+    "availabilityStatistics": false,
+    "autoCheckUpdate": false,
+    "checkPreRelease": false,
+    "isVerboseLogging": false,
+    "logViewer": {
+        "topMost": false,
+        "wrapText": false,
+        "toolbarShown": false,
+        "Font": "Consolas, 8pt",
+        "BackgroundColor": "Black",
+        "TextColor": "White"
     },
-    {
-      "server": "64.137.251.141",
-      "server_port": 2693,
-      "password": "doub.io/sszhfx/*2693",
-      "method": "chacha20",
-      "plugin": "",
-      "plugin_opts": "",
-      "plugin_args": "",
-      "remarks": "",
-      "timeout": 5
+    "proxy": {
+        "useProxy": false,
+        "proxyType": 0,
+        "proxyServer": "",
+        "proxyPort": 0,
+        "proxyTimeout": 3
     },
-    {
-      "server": "45.62.249.213",
-      "server_port": 2693,
-      "password": "doub.io/sszhfx/*2693",
-      "method": "chacha20",
-      "plugin": "",
-      "plugin_opts": "",
-      "plugin_args": "",
-      "remarks": "",
-      "timeout": 5
-    },
-    {
-      "server": "64.137.228.35",
-      "server_port": 2693,
-      "password": "doub.io/sszhfx/*2693",
-      "method": "chacha20",
-      "plugin": "",
-      "plugin_opts": "",
-      "plugin_args": "",
-      "remarks": "",
-      "timeout": 5
+    "hotkey": {
+        "SwitchSystemProxy": "",
+        "SwitchSystemProxyMode": "",
+        "SwitchAllowLan": "",
+        "ShowLogs": "",
+        "ServerMoveUp": "",
+        "ServerMoveDown": ""
     }
-  ],
-  "strategy": "com.shadowsocks.strategy.ha",
-  "index": -1,
-  "global": false,
-  "enabled": true,
-  "shareOverLan": false,
-  "isDefault": false,
-  "localPort": 1080,
-  "pacUrl": null,
-  "useOnlinePac": false,
-  "secureLocalPac": true,
-  "availabilityStatistics": false,
-  "autoCheckUpdate": false,
-  "checkPreRelease": false,
-  "isVerboseLogging": false,
-  "logViewer": {
-    "topMost": false,
-    "wrapText": false,
-    "toolbarShown": false,
-    "Font": "Consolas, 8pt",
-    "BackgroundColor": "Black",
-    "TextColor": "White"
-  },
-  "proxy": {
-    "useProxy": false,
-    "proxyType": 0,
-    "proxyServer": "",
-    "proxyPort": 0,
-    "proxyTimeout": 3
-  },
-  "hotkey": {
-    "SwitchSystemProxy": "",
-    "SwitchSystemProxyMode": "",
-    "SwitchAllowLan": "",
-    "ShowLogs": "",
-    "ServerMoveUp": "",
-    "ServerMoveDown": ""
-  }
 }
